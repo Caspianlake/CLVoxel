@@ -1,0 +1,14 @@
+[configuration]
+entry_symbol = "gdext_cl-voxel_init"
+compatibility_minimum = 4.1
+reloadable = true
+
+[libraries]
+linux.debug.x86_64 =     "res://../cl-voxel/target/debug/libcl-voxel.so"
+linux.release.x86_64 =   "res://../cl-voxel/target/release/libcl-voxel.so"
+windows.debug.x86_64 =   "res://../cl-voxel/target/debug/cl-voxel.dll"
+windows.release.x86_64 = "res://../cl-voxel/target/release/cl-voxel.dll"
+macos.debug =            "res://../cl-voxel/target/debug/libcl-voxel.dylib"
+macos.release =          "res://../cl-voxel/target/release/libcl-voxel.dylib"
+macos.debug.arm64 =      "res://../cl-voxel/target/debug/libcl-voxel.dylib"
+macos.release.arm64 =    "res://../cl-voxel/target/release/libcl-voxel.dylib"

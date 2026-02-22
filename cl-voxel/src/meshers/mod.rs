@@ -21,13 +21,13 @@ pub trait Mesher: Send + Sync {
     /// Generate a mesh from an SDF field
     /// 
     /// # Parameters
-    /// - `sdf`: Callable that takes a Vector3 and returns a float (distance)
+    /// - `sdf_data`: PackedFloat32Array containing SDF values in XZY order
     /// - `chunk_size`: Size of the voxel chunk in voxels
     /// - `voxel_size`: Size of each voxel in world units
     /// - `iso_level`: The SDF threshold for the surface (typically 0.0)
     fn generate_mesh(
         &mut self,
-        sdf: Callable,
+        sdf_data: PackedFloat32Array,
         chunk_size: Vector3i,
         voxel_size: f32,
         iso_level: f32,

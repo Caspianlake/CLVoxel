@@ -19,7 +19,7 @@ impl SurfaceNetsMesher {
 impl Mesher for SurfaceNetsMesher {
     fn generate_mesh(
         &mut self,
-        _sdf: Callable,
+        sdf_data: PackedFloat32Array,
         chunk_size: Vector3i,
         voxel_size: f32,
         iso_level: f32,
